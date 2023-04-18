@@ -106,21 +106,16 @@ Header styles
   line-height: 1.5;
   color: var(--color-slate);
 }
-.header-adress-mail {
+.header-adress-link {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-slate);
 }
-.header-adress-mail:hover,
-.header-adress-mail:focus {
+.header-adress-link:hover,
+.header-adress-link:focus {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-ocean);
-}
-.header-adress-contact {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-slate);
 }
 /*==============================
 Hero styles
@@ -187,6 +182,7 @@ We doing styles
 Our team styles
 ==============================*/
 .team {
+  background-color: var(--color-cloud);
 }
 .team-title {
   font-weight: 700;
@@ -195,13 +191,13 @@ Our team styles
   text-align: center;
   text-transform: capitalize;
   color: var(--color-navy-blue);
-  background-color: var(--color-cloud);
+  letter-spacing: 0.02em;
 }
 .team-list {
-  background-color: var(--color-white);
 }
 .team-item {
   text-align: center;
+  background-color: var(--color-white);
 }
 .team-img {
 }
