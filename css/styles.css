@@ -24,31 +24,27 @@ body {
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.02em;
-  color: var(--color-navy-blue);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-slate);
+  background-color: var(--color-white);
 }
 .list {
   list-style: none;
+  color: var(--color-navy-blue);
 }
 .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  color: var(--color-navy-blue);
+  letter-spacing: 0.02em;
 }
 .subtitle {
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--color-slate);
 }
-.web {
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-iris);
+.link {
+  text-decoration: none;
 }
 /*==============================
 Header styles
@@ -59,7 +55,18 @@ Header styles
 .header-nav {
 }
 .header-logo {
-  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-iris);
+}
+
+.studio {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -70,12 +77,12 @@ Header styles
   text-transform: uppercase;
   color: var(--color-navy-blue);
 }
+
 .header-nav-list {
 }
 .header-nav-item {
 }
 .header-nav-link {
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -95,12 +102,14 @@ Header styles
 .header-adress-list {
 }
 .header-adress-item {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-slate);
 }
 .header-adress-mail {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-slate);
-  text-decoration: none;
 }
 .header-adress-mail:hover,
 .header-adress-mail:focus {
@@ -109,7 +118,6 @@ Header styles
   color: var(--color-ocean);
 }
 .header-adress-contact {
-  text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-slate);
@@ -118,6 +126,7 @@ Header styles
 Hero styles
 ==============================*/
 .hero {
+  background-color: var(--color-navy-blue);
 }
 .hero-title {
   font-weight: 700;
@@ -126,8 +135,10 @@ Hero styles
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-navy-blue);
+  letter-spacing: 0.02em;
 }
 .hero-btn {
+  font-family: var(--primary-font);
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -152,19 +163,7 @@ Feature styles
 }
 .feature-Item {
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /*==============================
 We doing styles
 ==============================*/
@@ -176,6 +175,7 @@ We doing styles
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  color: var(--color-navy-blue);
 }
 .doing-list {
 }
@@ -194,8 +194,11 @@ Our team styles
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  color: var(--color-navy-blue);
+  background-color: var(--color-cloud);
 }
 .team-list {
+  background-color: var(--color-white);
 }
 .team-item {
   text-align: center;
@@ -203,30 +206,24 @@ Our team styles
 .team-img {
 }
 /*==============================
-Filter Btn
+Icons
 ==============================*/
-.btn {
+.icon {
 }
-.btn-list {
+.icon-list {
 }
-.btn-item {
+.icon-item {
 }
-.btn-button-dark:hover,
-.btn-button-dark:focus,
-.btn-button-dark {
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
+.icon-button:hover {
   color: var(--color-white);
-  background: var(--color-ocean);
+  background-color: var(--color-ocean);
 }
-.btn-button:hover,
-.btn-button:focus,
-.btn-button {
+.icon-button:focus {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+.icon-button {
+  font-family: var(--primary-font);
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -239,9 +236,20 @@ Filter Btn
 }
 
 /*==============================
-Project card
+ card
 ==============================*/
-.card {
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
+.card-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
 }
 .card-list {
 }
@@ -252,9 +260,11 @@ Project card
 /*==============================
 Footer styles
 ==============================*/
+.footer {
+  background-color: var(--color-navy-blue);
+}
 .footer-link {
-  text-decoration: none;
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -262,7 +272,10 @@ Footer styles
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-navy-blue);
+  color: var(--color-iris);
+}
+.studio-light {
+  color: var(--color-cloud);
 }
 .footer-text {
   font-size: 16px;
